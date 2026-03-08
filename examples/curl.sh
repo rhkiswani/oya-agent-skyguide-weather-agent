@@ -1,11 +1,15 @@
 #!/bin/bash
 # Chat with SkyGuide Weather Agent via cURL
-# Replace YOUR_API_KEY with your actual API key from https://dev.oya.ai/api-keys
+# Replace a2a_your_key_here with your actual API key from https://dev.oya.ai/api-keys
 
+# First message — starts a new thread
 curl -X POST https://dev.oya.ai/api/v1/chat/completions \
+  -H "Authorization: Bearer a2a_your_key_here" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -d '{
-    "model": "b978e78d-c74e-405f-80fc-3f160c75aac3",
-    "messages": [{"role": "user", "content": "Hello!"}]
-  }'
+  -d '{"model":"gemini/gemini-2.0-flash","messages":[{"role":"user","content":"Hello"}]}'
+
+# Continue a conversation using thread_id from the first response:
+curl -X POST https://dev.oya.ai/api/v1/chat/completions \
+  -H "Authorization: Bearer a2a_your_key_here" \
+  -H "Content-Type: application/json" \
+  -d '{"model":"gemini/gemini-2.0-flash","messages":[{"role":"user","content":"Follow up question"}],"thread_id":"thread_id_from_previous_response"}'

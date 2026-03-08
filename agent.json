@@ -68,90 +68,47 @@
     {
       "platform": "telegram",
       "name": "Telegram Gateway",
-      "is_active": true,
-      "config": {}
+      "is_active": true
     },
     {
       "platform": "gmail",
       "name": "Gmail \u2014 mk@a2abase.ai",
-      "is_active": true,
-      "config": {
-        "authed_via": "oauth",
-        "user_email": "mk@a2abase.ai"
-      }
+      "is_active": true
     },
     {
       "platform": "google-calendar",
       "name": "Google Calendar \u2014 mk@a2abase.ai",
-      "is_active": true,
-      "config": {
-        "authed_via": "oauth",
-        "user_email": "mk@a2abase.ai",
-        "calendar_id": "primary"
-      }
+      "is_active": true
     },
     {
       "platform": "google-drive",
       "name": "Google Drive \u2014 mk@a2abase.ai",
-      "is_active": true,
-      "config": {
-        "authed_via": "oauth",
-        "user_email": "mk@a2abase.ai"
-      }
+      "is_active": true
     },
     {
       "platform": "clickup",
       "name": "ClickUp \u2014 OyaAI",
-      "is_active": true,
-      "config": {
-        "team_id": "9017992724",
-        "team_name": "OyaAI",
-        "authed_via": "oauth"
-      }
+      "is_active": true
     },
     {
       "platform": "jira",
       "name": "Jira \u2014 belaraby",
-      "is_active": true,
-      "config": {
-        "cloud_id": "cd144280-d361-4133-9a56-207e674102c8",
-        "site_url": "https://belaraby.atlassian.net",
-        "site_name": "belaraby",
-        "authed_via": "oauth",
-        "token_refreshed_at": 1772664394
-      }
+      "is_active": true
     },
     {
       "platform": "slack",
       "name": "Slack \u2014 A2ABaseAI",
-      "is_active": true,
-      "config": {
-        "team_id": "T0AHEK68JCE",
-        "team_name": "A2ABaseAI",
-        "authed_via": "oauth",
-        "bot_user_id": "U0AHYCDFZN3"
-      }
+      "is_active": true
     },
     {
       "platform": "google-calendar",
       "name": "Google Calendar \u2014 mk@oya.ai",
-      "is_active": true,
-      "config": {
-        "authed_via": "oauth",
-        "user_email": "mk@oya.ai",
-        "calendar_id": "primary"
-      }
+      "is_active": true
     },
     {
       "platform": "linkedin",
       "name": "LinkedIn \u2014 Mohamed Alkiswani",
-      "is_active": true,
-      "config": {
-        "authed_via": "oauth",
-        "expires_in": 5183999,
-        "profile_name": "Mohamed Alkiswani",
-        "token_obtained_at": 1772937681
-      }
+      "is_active": true
     }
   ],
   "routines": [],
